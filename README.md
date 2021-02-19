@@ -1,10 +1,8 @@
 # Serverless OpenGraph Image Generator
 
-[Demo - Click](https://4kp64zg64b.execute-api.us-east-1.amazonaws.com/dev/og-image?title=Hello,%20this%20is%20a%20test...&fontSize=4em)
-
 ### Usage
 
-1. Open `index.html` and edit it as you like.
+1. `index.html` is the default template for generating images. Open and edit it as you like. You can also create your own.
 
 2. Run:
 ```sh
@@ -17,20 +15,9 @@ curl <DEPLOYED_ENDPOINT>?title=This is awesome!
 By default, Puppeteer will render `index.html` file but you can also use `template` parameter to open another HTML file, like so:
 
 ```
-https://5618scdg33.execute-api.us-east-1.amazonaws.com/dev/screenshot?template=twiddb.html?title=ANOTHER%20TEMPLATE
+https://<your_endpoint>?template=twiddb.html?title=ANOTHER%20TEMPLATE
 ```
-
-### Todo
-- [x] Caching in Lambda's memory
-- [x] Caching in S3
 
 ### Author
 
-👤 [**Dynobase**](https://dynobase.dev)
-
-- Twitter: [@Dynobase](https://twitter.com/dynobase)
-- Github: [@Dynobase](https://github.com/Dynobase)
-
-### Show your support
-
-Give a ⭐️ if this project helped you!
+This repo has been forked from 👤 [**Dynobase**](https://dynobase.dev)
